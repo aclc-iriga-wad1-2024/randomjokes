@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../dist/bootstrap-5.3.3/css/bootstrap.min.css">
+    <title>Demo: Mercury & Thunderbird</title>
+</head>
+<body>
+    <div class="py-5" style="background-color: #ddd">
+        <div class="container">
+            <h2>Demo on Mercury Mail Server and Thunderbird Email Client</h2>
+            <p>
+                <a href="http://localhost/randomjokes" class="fw-bold text-decoration-none" target="_blank">RandomJokes</a>
+                is an email-invite based application
+                where users can access random jokes through links sent to their emails.
+            </p>
+            <p>
+                This demo highlights how to configure and utilize
+                the <a href="https://www.quora.com/What-is-XAMPP-Mercury" class="fw-bold text-decoration-none" target="_blank">Mercury</a> Mail server included in <b>XAMPP</b>
+                alongside <a href="https://www.thunderbird.net/en-US/" class="fw-bold text-decoration-none" target="_blank">Thunderbird</a> email client.
+            </p>
+        </div>
+    </div>
+    <div class="container pt-3">
+        <h3 class="mb-4">I. Mercury</h3>
+        <ol>
+            <li class="mb-4">
+                <p>
+                    <b>Setup XAMPP:</b>
+                    If you haven't already, <a href="https://www.apachefriends.org/download.html" class="fw-bold text-decoration-none" target="_blank">download and install XAMPP</a>.
+                    During installation, ensure that the Mercury mail server is enabled.
+                </p>
+                <p>Open the XAMPP control panel and start <b class="opacity-75">Apache</b>, <b class="opacity-75">MySQL</b>, and <b class="opacity-75">Mercury</b>.</p>
+                <video controls class="img-fluid rounded-2" style="border: 1px solid #ddd; max-width: 800px;">
+                    <source src="assets/01-start-mercury.mp4" type="video/mp4">
+                </video>
+                <hr>
+            </li>
+
+            <li class="mb-4">
+                <p><b>Open Mercury Admin:</b> Open the Mercury Admin panel by clicking the "Admin" button in the Mercury section of the XAMPP Control Panel.</p>
+                <img src="assets/02-access-mercury-admin.png" class="img-fluid rounded-2 mb-2"  style="border: 1px solid #ddd">
+                <hr>
+            </li>
+
+            <li class="mb-4">
+                <p>
+                    <b>Add Local User:</b> In the Mercury Admin panel,
+                    navigate to <code class="fw-bold">Configuration</code> -> <code class="fw-bold">Manage local users...</code>
+                    Click "Add" and enter the following user details:
+                </p>
+                <table style="font-family: monospace" class="mb-3">
+                    <tr>
+                        <td><b>Username</b></td>
+                        <td> : </td>
+                        <td><code>randomjokes</code></td>
+                    </tr>
+                    <tr>
+                        <td><b>Personal Name</b></td>
+                        <td> : </td>
+                        <td><code>RandomJokes</code></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mail Password</b></td>
+                        <td> : </td>
+                        <td><code>123456</code></td>
+                    </tr>
+                </table>
+                <video controls class="img-fluid rounded-2 mb-2" style="border: 1px solid #ddd; max-width: 800px;">
+                    <source src="assets/03-add-local-user.mp4" type="video/mp4">
+                </video>
+                <p>Then, repeat this process to add two more users:</p>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <table style="font-family: monospace" class="mb-2">
+                            <tr>
+                                <td><b>Username</b></td>
+                                <td> : </td>
+                                <td><code>userone</code></td>
+                            </tr>
+                            <tr>
+                                <td><b>Personal Name</b></td>
+                                <td> : </td>
+                                <td><code>User One</code></td>
+                            </tr>
+                            <tr>
+                                <td><b>Mail Password</b></td>
+                                <td> : </td>
+                                <td><code>123456</code></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <table style="font-family: monospace" class="mb-2">
+                            <tr>
+                                <td><b>Username</b></td>
+                                <td> : </td>
+                                <td><code>usertwo</code></td>
+                            </tr>
+                            <tr>
+                                <td><b>Personal Name</b></td>
+                                <td> : </td>
+                                <td><code>User Two</code></td>
+                            </tr>
+                            <tr>
+                                <td><b>Mail Password</b></td>
+                                <td> : </td>
+                                <td><code>123456</code></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </li>
+        </ol>
+
+        <h3 class="mb-4">II. Thunderbird</h3>
+        <ol>
+            <li class="mb-4">
+                <p>
+                    <b>Set Up Thunderbird:</b> Download and install
+                    <a href="https://www.thunderbird.net/en-US/" class="fw-bold text-decoration-none" target="_blank">Thunderbird</a>
+                    email client if you haven't already.
+                </p>
+                <p>Next, register the email account for the <code>RandomJokes</code> user in Thunderbird. Use the same credentials we entered in Mercury.</p>
+                <video controls class="img-fluid rounded-2 mb-2" style="border: 1px solid #ddd; max-width: 800px;">
+                    <source src="assets/04-create-thunderbird-account.mp4" type="video/mp4">
+                </video>
+                <p>Repeat this process to register the email accounts for <code>User One</code> and <code>User Two</code> in Thunderbird as well.</p>
+                <hr>
+            </li>
+
+            <li class="mb-4">
+                <p>
+                    <b>Test Thunderbird:</b> Create an email from the
+                    <code>RandomJokes</code> user and send it to <code>User One</code> and <code>User Two</code> in Thunderbird.
+                </p>
+                <p>
+                    <i>Make sure to change their email addresses to use <code>@localhost.net</code> to represent valid local addresses, which we will also use in the application later.</i>
+                </p>
+                <video controls class="img-fluid rounded-2 mb-2" style="border: 1px solid #ddd; max-width: 800px;">
+                    <source src="assets/05-test-email-in-thunderbird.mp4" type="video/mp4">
+                </video>
+                <hr>
+            </li>
+        </ol>
+
+        <h3 class="mb-4">III. The App</h3>
+        <ol>
+            <li class="mb-4">
+                <p>
+                    <b>Grab the Project:</b>
+                    Clone or download <a href="https://github.com/kulotsystems/randomjokes" class="fw-bold fst-italic text-decoration-none" target="_blank">github.com/kulotsystems/randomjokes</a>
+                    repository to your XAMPP <b class="opacity-75">htdocs</b> folder.
+                </p>
+                <hr>
+            </li>
+
+            <li class="mb-4">
+                <p>
+                    <b>Import the Database:</b>
+                    Open <a href="http://localhost/phpmyadmin" class="fw-bold fst-italic text-decoration-none" target="_blank">phpMyAdmin</a>
+                    and create a new database named <code>randomjokes</code>.
+                </p>
+                <p>Once the database is created, import the <code class="fw-bold">config/randomjokes.sql</code> file from the cloned project into it.</p>
+                <hr>
+            </li>
+
+            <li class="mb-4">
+                <p>
+                    <b>Try the App:</b>
+                    Visit <a href="http://localhost/randomjokes" class="fw-bold fst-italic text-decoration-none" target="_blank">localhost/randomjokes</a>
+                    and have <code>User One</code> and <code>User Two</code> access the jokes.
+                </p>
+
+                <p class="fst-italic">Make sure to use <code>@localhost.net</code> as their email domain. You can view the emails sent by the app in Thunderbird.</p>
+
+                <video controls class="img-fluid rounded-2 mb-2" style="max-width: 800px;">
+                    <source src="assets/06-andomjokes-demo.mp4" type="video/mp4">
+                </video>
+            </li>
+        </ol>
+    </div>
+
+
+    <script src="../dist/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
