@@ -6,4 +6,4 @@ This demo highlights how to configure and utilize
 the [**Mercury**](https://www.quora.com/What-is-XAMPP-Mercury) Mail server included in **XAMPP**
 alongside [**Thunderbird**](https://www.thunderbird.net/en-US/) email client.
 
-# [View Demo](https://kulotsystems.github.io/randomjokes/.demo/index.html)
+# [View Docs](https://kulotsystems.github.io/randomjokes)
