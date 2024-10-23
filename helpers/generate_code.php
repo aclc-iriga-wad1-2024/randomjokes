@@ -1,10 +1,6 @@
 <?php
 /**
  * generate_code: Helper function to generate a random code.
- */
-
-/**
- * Generate random code.
  * @param $length
  * @return string
  * @throws Exception
