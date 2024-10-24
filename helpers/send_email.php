@@ -32,6 +32,7 @@ function send_email($recipient_email, $subject, $body)
         $mail->SMTPAuth    = $smtp['auth'];
         $mail->Username    = $smtp['username'];
         $mail->Password    = $smtp['password'];
+        $mail->SMTPSecure  = $smtp['secure'];
         $mail->Port        = $smtp['port'];
         $mail->From        = $smtp['from']['email'];
         $mail->FromName    = $smtp['from']['name'];

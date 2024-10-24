@@ -8,6 +8,7 @@ $smtp = [
     'auth'     => false,
     'username' => 'randomjokes@localhost.net',
     'password' => '123456',
+    'secure'   => '',
     'port'     => 25,
     'debug'    => 0,
     'from'     => [
