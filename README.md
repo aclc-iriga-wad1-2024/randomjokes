@@ -11,6 +11,6 @@ alongside [**Thunderbird**](https://www.thunderbird.net/en-US/) email client.
 
 ## Earn 50 Rating Points!
 
-Install this app, record your screen while using it, and send the video to our Group Chat. You'll earn 50 rating points that you can distribute across any of your past activities.
+Install this app, record your screen while using it, and send the video to our Group Chat. You'll earn **50 rating points** that you can distribute across any of your past activities.
 
 This offer is open to everyone and is valid until **Saturday, November 16, 2024, 17:00 UTC+8**.
